@@ -21,7 +21,7 @@ git_done() {
 
 commit() {
   if [ -z "$1" ]; then
-    echo "bruh, give me a commit message"
+    echo "Error: No commit message provided."
     return 1
   fi
   git add . && git commit -m "$1" && git push
